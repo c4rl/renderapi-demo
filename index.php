@@ -129,17 +129,17 @@ $app->get('/built-page', function(Request $request, Application $app) {
              'head_title' => 'Hello',
 
              'content' => RenderAPI::create('ThemeNode', array(
-               'node' => node_load(123),
+               'node' => \node_load(123),
              )),
 
              'sidebar_first' => RenderAPI::create(array(
 
                'nodes' => RenderAPI::create(array(
                  RenderAPI::create('ThemeNode', array(
-                   'node' => node_load(456),
+                   'node' => \node_load(456),
                  )),
                  RenderAPI::create('ThemeNode', array(
-                   'node' => node_load(789),
+                   'node' => \node_load(789),
                  )),
                )),
 

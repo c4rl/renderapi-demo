@@ -7,7 +7,8 @@
     "autoload": {
         "psr-4": {
             "FakeDrupal\\": "core/lib/FakeDrupal"
-        }
+        },
+        "files": ["core/modules/node.module.php"]
     },
     "repositories": [
         {
